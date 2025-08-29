@@ -3,507 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Distributorship</title>
-    <style>
-    body {
-      
-    }
-    .logo{
-        display:none;
-    }
-    .shadow-wrapper{
-  filter: drop-shadow(3px 3px 10px  #ffc700);
-  height:100%;
-  width:100%;
-position:absolute;
-    }
-    .my-shape {
-  width: 100%;
-  height: 100%;
-  position:absolute;
-  background: #d4a400;
-  clip-path: ellipse(90% 90% at 20px 80px);
-  transform:rotateZ(8deg) translateY(-180px) translateX(-100px);
-
-}
-    .my-shape-black {
-  width: 100%;
-  height: 100%;
-  position:absolute;
-  background: black;
-  clip-path: ellipse(90% 90% at 20px 80px);
-  transform:rotateZ(8deg) translateY(-220px) translateX(-100px);
-}
-
-.form-box{
-   background-color:rgba(33, 32, 32, 0.4);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8), 5px 5px 50px  rgba(255, 255, 255, 0.4), -5px -5px 50px  rgba(255, 255, 255, 0.4);
-
-  border-radius:30px;
-  border: 2px solid #d4a400;
-  height: auto;
-  display: flex;
-  flex-direction:column;
-  padding-top:3vw;
-  justify-content: space-evenly;
-  align-items:center;
-  flex:1 1;
-  color: white;
-  position: relative;
-  top:28vh;
-  width:30vw;
-  height:60vh;;
-  transform:translateX(10vw);
-}
-
-h1{
-position:absolute;
-color: #fdca07;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 650;
-  font-style: normal;
-  letter-spacing: 3px;
-    font-size:5vw;
-    top:0vw;
-    left:5vw;
-}
-.second{
-    top:6vw;
-    margin-top:3vw;
-    left:1vw;
-}
-input{
-    width:20vw;
-    height:2vw;
-    border-radius:8px;
-    background-color:rgba(124, 124, 124, 0.8);
-    color:white;
-    text-align:center;
-
-}
-input::placeholder{
-    color:white;
-}
-span{
-    position:relative;
-    left:2vw;
-    top:0.2vw;
-}
-button{
-    width:20vw;
-    height:2.5vw;
-    margin-left:1.5vw;
-    margin-top:4vw;
-    background-color: #ffc700;
-    border-radius:8px;
-    box-shadow: inset -3px -3px 10px rgb(139, 110, 5), inset 3px 3px 10px rgb(247, 235, 192);
-}
-
-.bg-wrapper{
-    position:absolute;
-    width:100%;
-    height:100%;
-    z-index:-2;
-}
-.bg{
-    position:relative;
-    object-fit:fill;
-    height:100%;
-    width:100%;
-}
-
-/* Tablets (portrait and landscape) */
-@media (max-width: 1024px) {
-  /* Adjust layout, font sizes, paddings, etc. */
-
-
-  body{
-  background: linear-gradient(
-    to right,
-    #000000,       /* black */
-    #1a1a1a 25%,   /* very dark gray */
-    #333333 50%,   /* dark gray */
-    #1a1a1a 75%,   /* very dark gray again */
-    #000000        /* black again */
-  );
-  
-}
-.shadow-wrapper{
-  filter: drop-shadow(3px 3px 20px  #ffc700);
-  height:1800px;
-  width:100%;
-position:absolute;
-z-index: 15;
-    }
-    .my-shape {
-  width: 100%;
-  height: 100%;
-  position:absolute;
-  background: #d4a400;
-  clip-path: circle(60%);
-  transform:rotateZ(0deg) translateY(-80%) translateX(0px);
-  z-index: 15;
-
-}
-    .my-shape-black {
-  width: 100%;
-  height: 1800px;
-  position:absolute;
-  background: black;
-  clip-path: circle(60%);
-  transform:rotateZ(0deg) translateY(-82%) translateX(0px);
-  z-index: 20;
-}
-.logo{
-    position:absolute;
-    display:block;
-    width:35vw;
-    height:auto;
-    z-index:100;
-    top:-0.5vh;
-    left:34%;
-    transform:rotateZ(10deg);
-}
-
-
-.form-box{
-   background-color:rgba(33, 32, 32, 0.4);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8), 5px 5px 50px  rgba(255, 255, 255, 0.4), -5px -5px 50px  rgba(255, 255, 255, 0.4);
-
-  border-radius:30px;
-  border: 2px solid #d4a400;
-  display: flex;
-  flex-direction:column;
-  padding-top:3vw;
-  justify-content: space-evenly;
-  align-items:center;
-  flex:1 1;
-  color: white;
-  position: relative;
-  top:65vh;
-  width:70vw;
-  height:65vh;;
-  margin-left:5vw;
-  margin-bottom:10px;
-}
-
-h1{
-position:absolute;
-color: #fdca07;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 650;
-  font-style: normal;
-  letter-spacing: 3px;
-    font-size:5vw;
-    top:42vh;
-    left:25%;
-}
-.second{
-    top:45vh;
-    margin-top:6vh;
-    left:15%;
-}
-input{
-    width:50vw;
-    height:3vh;
-    border-radius:8px;
-    background-color:rgba(124, 124, 124, 0.8);
-    color:white;
-    text-align:center;
-    margin-bottom:1.5vh;
-
-}
-input::placeholder{
-    color:rgba(207, 207, 207, 0.8);
-    font-size:1.8vw;
-    letter-spacing:0.5vw;
-}
-span{
-    position:relative;
-    left:4vw;
-    top:0.2vw;
-}
-span > ion-icon{
-    scale:1.3;
-}
-button{
-    width:53vw;
-    height:3.5vh;
-    margin-left:0.8vw;
-    margin-top:4vw;
-    background-color: #ffc700;
-    border-radius:8px;
-    box-shadow: inset -3px -3px 10px rgb(139, 110, 5), inset 3px 3px 10px rgb(247, 235, 192);
-    
-}
-.sub{
-    position: relative;
-font-size:2vw;
-letter-spacing:0.5vw;
-top:-1vw;
-}
-
-.bg-wrapper{
-    position:absolute;
-    width:100%;
-    height:100%;
-    z-index:-2;
-    display:none;
-}
-.bg{
-    position:relative;
-    object-fit:fill;
-    height:100%;
-    width:100%;
-}
-
-.zero{
-    color:white;
-    left:-0vw;
-}
-
-}
-
-
-
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-  /* Stack items vertically, center text, hide large images, etc. */
-
- body{
-  background: linear-gradient(
-    to right,
-    #000000,       /* black */
-    #1a1a1a 25%,   /* very dark gray */
-    #333333 50%,   /* dark gray */
-    #1a1a1a 75%,   /* very dark gray again */
-    #000000        /* black again */
-  );
-  
-}
-.shadow-wrapper{
-  filter: drop-shadow(3px 3px 20px  #ffc700);
-  height:1200px;
-  width:100%;
-position:absolute;
-z-index: 15;
-    }
-    .my-shape {
-  width: 100%;
-  height: 100%;
-  position:absolute;
-  background: #d4a400;
-  clip-path: circle(40%);
-  transform:rotateZ(0deg) translateY(-60%) translateX(0px);
-  z-index: 15;
-
-}
-    .my-shape-black {
-  width: 100%;
-  height: 1200px;
-  position:absolute;
-  background: black;
-  clip-path: circle(40%);
-  transform:rotateZ(0deg) translateY(-61%) translateX(0px);
-  z-index: 20;
-}
-.logo{
-    position:absolute;
-    display:block;
-    width:40vw;
-    height:auto;
-    z-index:100;
-    top: 3vh;
-    left:30%;
-    transform:rotateZ(10deg);
-}
-
-
-.form-box{
-   background-color:rgba(33, 32, 32, 0.4);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8), 5px 5px 50px  rgba(255, 255, 255, 0.4), -5px -5px 50px  rgba(255, 255, 255, 0.4);
-
-  border-radius:30px;
-  border: 2px solid #d4a400;
-  display: flex;
-  flex-direction:column;
-  padding-top:3vw;
-  justify-content: space-evenly;
-  align-items:center;
-  flex:1 1;
-  color: white;
-  position: relative;
-  top:55vh;
-  width:70vw;
-  height:65vh;;
-  margin-left:3vw;
-  margin-bottom:10px;
-}
-
-h1{
-position:absolute;
-color: #fdca07;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  letter-spacing: 3px;
-    font-size:6vw;
-    transform:scaleY(1.5) scaleX(1.3);
-    top:32vh;
-    left:18vw;
-   
-    text-align:center;
-}
-.second{
-    top:35vh;
-    margin-top:6vh;
-        transform:scaleY(1) scaleX(1);
-    font-size:8vw;
-    left:0vw;
+    <title>Document</title>
+    <STYLE>
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            position:absolute;
+            left:35%;
  
-}
-input{
-    position: relative;
-    width:50vw;
-    height:3vh;
-    border-radius:8px;
-    background-color:rgba(124, 124, 124, 0.8);
-    color:white;
-    text-align:center;
-    margin-bottom:1.5vh;
-    left:-2vw;
 
+        }
+        .bg{
+            width:500px;
+            height:auto;
+            z-index:1;
+            animation: gradient-animation 0.5s ease;
+        }
+        .tagline{
+            z-index:2;
+            position:relative;
+            Width:300px;
+            left:90px;
+            top:-20px;
+            animation: appear 0.5s;
+            animation-delay:0s;   
 }
-input::placeholder{
-    color:rgba(207, 207, 207, 0.8);
-    font-size:3vw;
-    letter-spacing:0.5vw;
+@keyframes appear{
+    0%{
+        scale:2;
+        opacity:0;
+    }
+    50%{
+        scale:3;
+        opacity:0;
+    }
+    70%{
+        scale:3;
+        opacity:0;
+    }
+    100%{
+        scale:1;
+        opacity:1;
+    }
 }
-span{
-    position:relative;
-    left:8vw;
-    top:0.8vw;
-    z-index:20;
-}
-span > ion-icon{
+
+@keyframes gradient-animation {
+  0% {
+    scale:2.5;
+    transform:rotateZ(-90deg);
+  }
+  100% {
     scale:1;
+    transform:rotateZ(0deg);
+  }
 }
-button{
-    position: relative;
-    width:53vw;
-    height:3.5vh;
-    margin-left:0.8vw;
-    margin-top:4vw;
-    background-color: #ffc700;
-    border-radius:8px;
-    box-shadow: inset -3px -3px 10px rgb(139, 110, 5), inset 3px 3px 10px rgb(247, 235, 192);
-    left:1.5vw;
-    
-}
-.sub{
-    position: relative;
-font-size:4vw;
-letter-spacing:0.5vw;
-top:-3vw;
-}
-
-.bg-wrapper{
-    position:absolute;
-    width:100%;
-    height:100%;
-    z-index:-2;
-    display:none;
-}
-.bg{
-    position:relative;
-    object-fit:fill;
-    height:100%;
-    width:100%;
-}
-
-.zero{
-    color:white;
-    left:-0vw;
-}
-
-
-
-}
-
-    </style>
+    </STYLE>
 </head>
 <body>
-    <div class="bg-wrapper">
-    <img src="form-bg.png" alt="" class="bg">
+    <div class="container">
+        <img src="bg-main.png" alt="" class="bg">
     </div>
-    <img src="real-logo.png" alt="snaczo logo" class="logo">
-    <div class="shadow-wrapper">
-    <div class="my-shape"></div>
+    <div class="container">
+        <img src="tag.png" alt="" class="tagline">
     </div>
-    <div class="my-shape-black"></div>
-    <div class="heading">
-    <h1>Get Distributorship</h1><h1 class="second">At <span class="zero">Zero</span> Security Amount!!!</h1>
-    </div>
-    <div class="form-box">
-<form id="distributorForm" method="POST" action="https://script.google.com/macros/s/AKfycbzn70WEY47e1M85teXlkpGg3UQUhBaM_PV-n53PgNni-J4tOw0h1yKcpzRqWwKubzM4pQ/exec">
-    <span> <ion-icon name="person-outline"></ion-icon></span>
-  <input type="text" name="name" placeholder="Full Name" required><br><br>
-  <span><ion-icon name="mail-outline"></ion-icon></span>
 
-  <input type="email" name="email" placeholder="Email" required><br><br>
-  <span><ion-icon name="call-outline"></ion-icon></span>
-  <input type="text" name="phone" placeholder="Phone Number" required><br><br>
-  <span><ion-icon name="location-outline"></ion-icon></span>
-  <input type="text" name="state" placeholder="State" required><br><br>
-   <span><ion-icon name="location-outline"></ion-icon></span>
-  <input type="text" name="District" placeholder="District" required><br><br>
-  <span><ion-icon name="location-outline"></ion-icon></span>
-  <input type="text" name="city" placeholder="City" required><br><br>
-  <span><ion-icon name="briefcase-outline"></ion-icon></span>
-  <input type="text" name="company" placeholder="Company Name"><br><br>
-  
-  <button type="submit"><p class="sub">Submit</p></button>
-</form>
-
-
-</div>
-<script>
-  const form = document.getElementById("distributorForm");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      state: form.state.value,
-      District: form.District.value, // case-sensitive
-      city: form.city.value,
-      company: form.company.value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbzn70WEY47e1M85teXlkpGg3UQUhBaM_PV-n53PgNni-J4tOw0h1yKcpzRqWwKubzM4pQ/exec", {
-      method: "POST",
-      mode: "no-cors", // required to avoid CORS errors
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    })
-    .then(() => {
-      alert("Thank you! We'll contact you soon.");
-      form.reset();
-    })
-    .catch((error) => {
-      console.error("Error!", error.message);
-      alert("Error submitting form.");
-    });
-  });
-</script>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
